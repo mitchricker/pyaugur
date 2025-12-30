@@ -1,11 +1,11 @@
 # PyAugur
 
-PyAugur is a lightweight, stand-alone Tarot card module compatible with both
-Python and MicroPython. It provides a complete 78-card tarot deck, built-in
+PyAugur is a lightweight, stand-alone Tarot card utility module compatible with both
+Python and MicroPython. It provides a complete 78-card tarot deck, built-in card
 meanings, and a collection of common tarot spreads.
 
-Originally developed for an ESP32 project, PyAugur is designed to be simple,
-portable, and dependency-free—making it suitable for embedded systems, games,
+Originally developed for an ESP32 project using MicroPython, PyAugur is designed to be simple,
+portable, and dependency-free: making it suitable for embedded systems, games,
 and creative coding projects.
 
 ---
@@ -23,7 +23,7 @@ and creative coding projects.
 
 ## Installation
 
-PyAugur is a single-file module.
+PyAugur is a single-file module that can easily be used as a "drop-in" to your project.
 
 Simply copy `pyaugur.py` into your project directory:
 
@@ -78,8 +78,6 @@ Each spread defines its own positions and required card count.
 
 ## Design Notes
 
-Meanings are stored as plain strings for easy customization.
-
-All data structures use standard Python types for MicroPython compatibility.
-
-No classes are required; the module is fully functional and procedural.
+- Meanings are stored as plain strings for easy customization.
+- All data structures use standard Python types for MicroPython compatibility.
+- Procedural, stateless API to minimize memory usage.
