@@ -1,3 +1,4 @@
+# List of all 22 Major Arcana tarot cards
 MAJOR_ARCANA = [
     "The Fool",
     "The Magician",
@@ -23,7 +24,10 @@ MAJOR_ARCANA = [
     "The World",
 ]
 
+# Suits in the Minor Arcana
 SUITS = ["Wands", "Cups", "Swords", "Pentacles"]
+
+# Ranks in each suit of the Minor Arcana
 RANKS = [
     "Ace",
     "2",
@@ -43,8 +47,18 @@ RANKS = [
 
 
 def build_deck():
+    """
+    Build a full 78-card tarot deck.
+
+    Combines the Major Arcana cards with all combinations of
+    Minor Arcana suits and ranks to produce a complete deck.
+
+    Returns:
+        list[str]: A list of card names in order: Major Arcana first,
+                   followed by Minor Arcana.
+    """
     deck = MAJOR_ARCANA[:]
     for suit in SUITS:
         for rank in RANKS:
-            deck.append(rank + " of " + suit)
+            deck.append(f"{rank} of {suit}")
     return deck

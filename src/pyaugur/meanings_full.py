@@ -1,6 +1,10 @@
 """
 Full Tarot card meanings for desktop (CPython).
-Includes detailed interpretations for Major and Minor Arcana.
+
+Contains detailed interpretations for all 78 cards:
+- MAJOR_MEANINGS: Major Arcana cards.
+- MINOR_MEANINGS: Minor Arcana cards by suit and rank.
+- ALL_MEANINGS: Combined dictionary for easy lookup.
 """
 
 # Major Arcana: full descriptions
@@ -93,7 +97,7 @@ MINOR_MEANINGS = {
     "King of Pentacles": "Success, control, and financial acumen.",
 }
 
-# Combine all into one dictionary
+# Combine all into one dictionary for easy lookup
 ALL_MEANINGS = {}
 ALL_MEANINGS.update(MAJOR_MEANINGS)
 ALL_MEANINGS.update(MINOR_MEANINGS)

@@ -1,11 +1,11 @@
-# src/pyaugur/meanings_stub.py
-
 """
-Minimal but meaningful Tarot card meanings for ESP32 / MicroPython.
-Includes full Major Arcana and condensed Minor Arcana keywords.
+Minimal Tarot card meanings for ESP32 / MicroPython.
+
+Includes:
+- Full Major Arcana with short descriptive phrases.
+- Condensed Minor Arcana keywords per suit.
 """
 
-# Major Arcana (short, descriptive phrases)
 MAJOR_MEANINGS = {
     "The Fool": "new beginnings, adventure",
     "The Magician": "action, skill, power",

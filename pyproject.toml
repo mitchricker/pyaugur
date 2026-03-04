@@ -7,7 +7,7 @@ authors = [
 ]
 license = {text = "MIT"}
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.10,<4"
 dependencies = [
 ]
 
@@ -20,5 +20,6 @@ build-backend = "poetry.core.masonry.api"
 dev = [
     "pytest (>=9.0.2,<10.0.0)",
     "ruff (>=0.15.4,<0.16.0)",
-    "black (>=26.1.0,<27.0.0)"
+    "black (>=26.1.0,<27.0.0)",
+    "pdoc (>=16.0.0,<17.0.0)"
 ]

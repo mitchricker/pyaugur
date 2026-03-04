@@ -61,3 +61,6 @@ $RECYCLE.BIN/
 # Linux
 *~
 .cache/
+
+# Generated documentation ---
+docs/
