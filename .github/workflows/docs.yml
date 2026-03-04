@@ -31,7 +31,7 @@ jobs:
 
       - name: Generate documentation
         run: |
-          poetry run pdoc src/pyaugur --html --output-dir docs --force
+          poetry run pdoc src/pyaugur --output-dir docs
 
       - name: Upload docs artifact
         uses: actions/upload-artifact@v3
