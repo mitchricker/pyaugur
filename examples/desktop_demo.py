@@ -1,5 +1,5 @@
 from pyaugur import build_deck, shuffle_deck, deal_cards
-from pyaugur.spreads import SPREADS, interpret_named_spread
+from pyaugur.spreads import interpret_named_spread
 from pyaugur.meanings_full import MAJOR_MEANINGS, MINOR_MEANINGS
 
 # Build and shuffle deck
