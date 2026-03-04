@@ -1,0 +1,63 @@
+
+# Python bytecode
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments ---
+
+# Poetry typically stores venvs outside the project, but just in case:
+.venv/
+env/
+venv/
+ENV/
+.env/
+
+# Poetry / cache
+.poetry/
+.cache/pypoetry/
+poetry.lock
+
+# pytest cache
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Ruff cache
+.ruff_cache/
+
+# IDE / editor configs ---
+
+# VSCode
+.vscode/
+.history/
+*.code-workspace
+
+# PyCharm / IntelliJ
+.idea/
+*.iml
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# OS files ---
+
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+.cache/
