@@ -1,0 +1,35 @@
+[project]
+name = "pyaugur"
+version = "0.2.0"
+description = "A package for tarot cards in Python."
+authors = [
+    {name = "mitch",email = "mitch@automating.systems"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.10,<4"
+dependencies = [
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "pytest (>=9.0.2,<10.0.0)",
+    "ruff (>=0.15.4,<0.16.0)",
+    "black (>=26.1.0,<27.0.0)",
+    "pdoc (>=16.0.0,<17.0.0)"
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+
+[tool.black]
+line-length = 88
+target-version = ["py310"]
